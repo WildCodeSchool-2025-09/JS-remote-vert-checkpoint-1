@@ -57,6 +57,11 @@ p {
   background-color: var(--lightWildColor);
 }
 
+.block-skills {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
 .skills {
   margin-top: calc(var(--gutter) * -2);
   border-radius: var(--radius);
@@ -120,7 +125,6 @@ p {
     justify-content: space-between;
   }
   .block-skills {
-    display: flex;
     justify-content: center;
 
   }
@@ -132,5 +136,8 @@ p {
 @media screen and (max-width: 700px) {
   .desktop {
     display: none;
+  }
+  .block-skills {
+    flex-direction : column-reverse;
   }
 }
