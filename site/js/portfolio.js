@@ -8,8 +8,9 @@ let firstName = document.querySelector('#firstname')
 let modifyingName = document.createElement('button')
 modifyingName.innerText = 'Modifying text and color'
 modifyingName.addEventListener('click', ()=> {
+    document.documentElement.style.setProperty("--lightWildColor",prompt('What color do you want'));
     firstName.innerText = prompt('What is your name ?')
     firstName.style.color = 'white'
-    description.style.backgroundColor = '#750ff7'
+  
 })
 description.appendChild(modifyingName)
