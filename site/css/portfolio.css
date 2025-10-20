@@ -28,10 +28,29 @@ p {
   margin-bottom: var(--gutter);
 }
 
+nav {
+ justify-content: space-between;
+}
+
+
 .desktop {
   margin: 0;
   margin-top: calc(var(--gutter) * 5);
   margin-bottom: calc(var(--gutter) * -0.3125);
+}
+
+@media screen and (max-width: 700px) {
+  .desktop{
+    display: none;
+  }
+}
+
+section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .description {
@@ -52,17 +71,22 @@ p {
 }
 
 .skills {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
   margin-top: calc(var(--gutter) * -2);
   border-radius: var(--radius);
   padding: 0 10%;
 }
 
 .skills--title {
+  display: none;
   margin: calc(var(--gutter) * -2) 0;
   text-align: var(--textAlign);
 }
 
 .column {
+  flex: 1;
   border-left: var(--styledBorder);
   border-right: var(--styledBorder);
   border-bottom: var(--styledBorder);
@@ -88,6 +112,20 @@ p {
   padding: 0;
 }
 
+@media screen and (max-width: 700px) {
+  .skills{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .column:last-child {
+  border-top-right-radius: 0;
+  border-top-left-radius: var(--radius);
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: var(--radius);
+}
+
+}
+
 .pink-text {
   color: var(--lightWildColor);
 }
@@ -96,6 +134,15 @@ p {
   color: var(--purple);
 }
 
+.projects{
+ text-align: center;
+}
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 .box {
   width: 25%;
   padding: calc(var(--gutter) * 2);
@@ -107,4 +154,8 @@ p {
 
 .purple-text {
   color: var(--purple);
+}
+
+.disabled{
+  opacity: 0.5 ;
 }
