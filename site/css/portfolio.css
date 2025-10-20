@@ -53,6 +53,14 @@ p {
   text-align: var(--textAlign);
 }
 
+.description button {
+  color: var(--light);
+  background-color: var(--wildColor);
+  border: 1px solid var(--light);
+  border-radius: 5px;
+  padding: 10px;
+}
+
 .pink-bg {
   background-color: var(--lightWildColor);
 }
