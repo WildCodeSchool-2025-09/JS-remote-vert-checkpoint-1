@@ -6,7 +6,8 @@ myAvatar.onclick=function() {
 
 const modifyText = document.querySelector('.my-button');
 const userName = document.getElementById('firstname');
-const bannerColor = document.querySelector('.pink-bg');
+const bannerColor = document.querySelectorAll('.pink-bg');
+const textColor = document.querySelectorAll('.pink-text');
 
 modifyText.onclick=function() {
     const newName = prompt("What's your name ?")
@@ -14,6 +15,11 @@ modifyText.onclick=function() {
     if (newName && newColor) {
         userName.innerHTML = newName;
         userName.style.color = "white";
-        bannerColor.style.backgroundColor = newColor;
+        bannerColor.forEach(function(bannerFooterColor) {
+            bannerFooterColor.style.backgroundColor = newColor;
+        });
+        textColor.forEach(function(textsColor) {
+            textsColor.style.color = newColor;
+        })
     }
 };
