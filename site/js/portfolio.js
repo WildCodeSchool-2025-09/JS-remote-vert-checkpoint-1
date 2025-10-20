@@ -16,5 +16,22 @@ modifyingName.addEventListener('click', ()=> {
 })
 description.appendChild(modifyingName)
 
+
 let allA = document.querySelectorAll('a')
 allA.forEach((element)=>element.style.color = '#750ff7')
+
+
+let arrayTools = ['VSCode','GitHub','Terminal']
+let modifyingTools = document.createElement('button')
+modifyingTools.style.backgroundColor = '#750ff7'
+modifyingTools.innerText ='Modify'
+let sectionFront = document.querySelector('.front')
+let allLiDevTools = document.querySelectorAll('#front-dev-tools li')
+
+modifyingTools.addEventListener('click', () => {
+    for (i = 0; i < allLiDevTools.length ; i++){
+        allLiDevTools[i].innerText = arrayTools[i]
+    }
+})
+sectionFront.appendChild(modifyingTools)
+console.log(allLiDevTools)

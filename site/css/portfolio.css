@@ -12,10 +12,10 @@
 }
 button {
   border: solid 2px white;
-  width: 200px;
+  padding: 4px;
   background-color: transparent;
   color:white;
-  border-radius: 2px;
+  border-radius: 4px;
 }
 
 img {
