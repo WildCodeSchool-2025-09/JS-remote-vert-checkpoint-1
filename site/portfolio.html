@@ -25,7 +25,7 @@
       <section class="section-one">
         <h1>Fullstack Developer</h1>
         <p>I code butifully simple things, and I love what I do</p>
-        <img src="image/avatar-bis.png" alt="avatar-bis">
+        <img id="avatar-image" src="image/avatar-bis.png" alt="avatar-bis">
         <figure class="desktop">
           <img src="image/desktop.svg" alt="desktop" />
         </figure>
@@ -36,13 +36,14 @@
         <section class="description pink-bg">
           <h1>Hi, I’m <span id="firstname">Matt</span>. Nice to meet you.</h1>
           <p>Since the beginning of my journey as a freelance developer nearly 10 years ago, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use. I'm quietly confident, naturally curious, and perpetually working on improving my chops one problem at a time.</p>
+          <button id="text-color">Modify Text And Color</button>
         </section>
       </article>
 
       <!-- Bloc of list of skill front end and back end -->
         
       <article class="skills">
-        <h2 class="skills--title">My Skills</h2>
+        <!-- <h2 class="skills--title">My Skills</h2> -->
           <section class="column">
               <img src="image/frontend.svg" alt="" />
               <h3>Back-end Developer</h3>
@@ -50,9 +51,14 @@
               <h4 class="pink-text">Languages I speak:</h4>
               <p>MySql</p>
               <h4 class="pink-text">Dev Tools:</h4>
-              <ul>
+              <form action="submit" id="user-form">
+                <input type="text" id="tool">
+                <input type="submit" id="submit">
+              </form>
+              <ul id="user-list">
                 <li>VScode</li>
               </ul>
+              
           </section>
           <section class="column">
               <img src="image/frontend.svg" alt="" />
@@ -66,6 +72,7 @@
                 <li>You can modify</li>
                 <li>You can modify</li>
               </ul>
+              <button id="dev-tools">Modify</button>
           </section>
       </article>
 
