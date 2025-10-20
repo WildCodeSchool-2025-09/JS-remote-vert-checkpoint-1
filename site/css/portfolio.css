@@ -60,6 +60,7 @@ p {
 .skills--title {
   margin: calc(var(--gutter) * -2) 0;
   text-align: var(--textAlign);
+  padding-top: 5%;
 }
 
 .column {
@@ -120,10 +121,28 @@ p {
     flex-direction: column;
     align-items: center;
   }
+  .column-gestion {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    padding-top: 5%;
+  }
+  .column {
+    width: 50%;
+  }
+
 }
 
 @media (max-width: 699px) {
   .desktop {
     display: none;
   }
+  .column-gestion {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 10%;
+  }
+.skills--title {
+  margin-top: 5%;
+}
 }
