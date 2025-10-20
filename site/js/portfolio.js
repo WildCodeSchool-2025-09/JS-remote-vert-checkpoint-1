@@ -6,11 +6,13 @@ const nameBtn = document.querySelector("#name-btn");
 const firstName = document.querySelector("#firstname");
 const coloredBgs = document.querySelectorAll(".pink-bg");
 const coloredTexts = document.querySelectorAll(".pink-text");
+const links = document.querySelectorAll("a");
 
 nameBtn.addEventListener("click", () => {
   const newBgColor = prompt("Enter a color:");
   coloredBgs.forEach((element) => (element.style.backgroundColor = newBgColor));
   coloredTexts.forEach((element) => (element.style.color = newBgColor));
+  links.forEach((element) => (element.style.color = newBgColor));
 
   const name = prompt("Enter your name:");
   firstName.textContent = name;
