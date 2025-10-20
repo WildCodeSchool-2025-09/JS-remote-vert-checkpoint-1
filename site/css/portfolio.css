@@ -108,3 +108,30 @@ p {
 .purple-text {
   color: var(--purple);
 }
+
+/*--------------    MES AJOUTS AU STYLE CSS -----------------------*/
+
+@media screen and (min-width: 701px) {
+  header nav {
+    justify-content: space-between;
+  }
+}
+section#banner {
+  margin: auto;
+}
+
+@media screen and (min-width: 701px) {
+  section#banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .desktop {
+    display: none;
+  }
+}
