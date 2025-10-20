@@ -10,6 +10,8 @@ const button = document.getElementById("buttonModification")
 
 const backgroundBanner = document.querySelectorAll(".description.pink-bg")
 
+const text = document.querySelectorAll(".pink-text")
+
 console.log(backgroundBanner)
 
 button.addEventListener("click", () => {
@@ -17,4 +19,6 @@ button.addEventListener("click", () => {
     firstname.textContent= prompt("Renseignez votre nom");
     const color = prompt("Choisissez une couleur")
     backgroundBanner.forEach(banner => {banner.style.backgroundColor = color;})
+    text.forEach(line => {line.style.color = color;})
+
 })
