@@ -115,4 +115,15 @@ p {
     display: flex;
     justify-content: end;
   }
+  .my-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 699px) {
+  .desktop {
+    display: none;
+  }
 }
