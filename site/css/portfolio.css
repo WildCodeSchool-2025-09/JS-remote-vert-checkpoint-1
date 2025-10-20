@@ -155,3 +155,6 @@ h2.skills--title {
     align-items: flex-start;
   }
 }
+.disabled {
+  opacity: 0.4;
+}
