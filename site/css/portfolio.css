@@ -124,6 +124,10 @@ nav {
   color: var(--purple);
 }
 
+.disabled {
+  opacity: 0.4;
+}
+
 .box {
   width: 25%;
   padding: calc(var(--gutter) * 2);
