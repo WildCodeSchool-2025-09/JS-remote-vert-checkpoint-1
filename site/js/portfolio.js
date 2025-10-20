@@ -12,9 +12,13 @@ function changename() {
         replacename = document.getElementById('firstname');
         replacename.textContent = newname;
         replacename.style.color = 'white';
-        replacecolor = document.getElementsByClassName('pink-bg');
+        replacecolor = document.querySelectorAll('.pink-bg');
         for (let i = 0; i < replacecolor.length; i++) {
             replacecolor[i].style.backgroundColor = newcolor;
+        }
+        replacetextcolor = document.querySelectorAll('.pink-text');
+        for (let i = 0; i < replacetextcolor.length; i++) {
+            replacetextcolor[i].style.color = newcolor;
         }
     });
 }
