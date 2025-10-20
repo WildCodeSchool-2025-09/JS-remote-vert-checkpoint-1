@@ -20,11 +20,16 @@
     </header>
 
     <main>
+      <section class="haut_de_page">
+        <h2>FullStack Developer</h2>
+        <p>i code buteafully simple things, and i love what i do</p>
+        <img src="image/avatar-bis.png" alt="image d'avatar">
+      </section>
       <!-- First banner with title, description, avatar and image desktop -->
       <!-- You can use the avatar image on the folder image -->
       <section>
         <figure class="desktop">
-          <img src="image/desktop.svg" alt="desktop" />
+          <img class="monImage" src="image/desktop.svg" alt="desktop" />
         </figure>
       </section>
 
@@ -33,15 +38,17 @@
         <section class="description pink-bg">
           <h1>Hi, I’m <span id="firstname">Matt</span>. Nice to meet you.</h1>
           <p>Since the beginning of my journey as a freelance developer nearly 10 years ago, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use. I'm quietly confident, naturally curious, and perpetually working on improving my chops one problem at a time.</p>
+       <button id="boutonChanger">modify text and color</button>
+
         </section>
       </article>
 
       <!-- Bloc of list of skill front end and back end -->
         
-      <article class="skills">
+      <article id="skills" class="skills">
         <h2 class="skills--title">My Skills</h2>
-          <section class="column">
-              <img src="image/frontend.svg" alt="" />
+          <section id="column_1" class="column">
+              <img src="image/frontend.svg" alt="frontend" />
               <h3>Back-end Developer</h3>
               <p>I like to code things from scratch.</p>
               <h4 class="pink-text">Languages I speak:</h4>
@@ -51,7 +58,7 @@
                 <li>VScode</li>
               </ul>
           </section>
-          <section class="column">
+          <section id="column_2" class="column">
               <img src="image/frontend.svg" alt="" />
               <h3>Front-end Developer</h3>
               <p>I love bringing ideas to life.</p>
@@ -70,6 +77,7 @@
       <article class="projects">
           <h2>My Recent Work</h2>
           <p>Here are a few projects I've worked on recently. Want to see more? Email me.</p>
+          <section class="master_box">
           <section class="box">
             <img src="https://mattfarley.ca/img/logos/kybercore.svg" alt="logo-entreprise" />
             <p>Next level plug and play chassis systems for custom do-it-yourself lightsaber builds.</p>
@@ -89,6 +97,7 @@
             <img src="https://mattfarley.ca/img/logos/dovetail.svg" alt="logo-entreprise" />
             <p>A space and member management solution for coworking communities both big and small.</p>
             <a class="disabled" >Shutdown in 2017</a>
+          </section>
           </section>
       </article>      
     </main>
