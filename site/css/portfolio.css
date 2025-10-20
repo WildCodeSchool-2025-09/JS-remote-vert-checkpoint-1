@@ -75,7 +75,7 @@ p {
 }
 
 .skills--title {
-  margin: calc(var(--gutter) * -2) 0;
+  /* margin: calc(var(--gutter) * -2) 0; */
   text-align: var(--textAlign);
 }
 
