@@ -159,3 +159,12 @@ section{
 .disabled{
   opacity: 0.5 ;
 }
+
+#changeNameBtn{
+  height: 2.5rem;
+  background-color: #e67a8c ;
+  border-color: var(--borderColor);
+  border-radius: var(--radius);
+color: var(--light);
+
+}
