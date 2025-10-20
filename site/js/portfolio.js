@@ -1,6 +1,11 @@
 const avatar = document.querySelector(".banner img");
+const src1 = "image/avatar-bis.png";
+const src2 = "image/avatar.svg";
 
-avatar.addEventListener("click", () => (avatar.src = "image/avatar.svg"));
+avatar.addEventListener(
+  "click",
+  () => (avatar.src = avatar.src.includes(src1) ? src2 : src1)
+);
 
 const nameBtn = document.querySelector("#name-btn");
 const firstName = document.querySelector("#firstname");
