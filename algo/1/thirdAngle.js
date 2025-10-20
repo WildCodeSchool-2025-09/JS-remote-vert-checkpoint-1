@@ -4,10 +4,22 @@
 Ex: 
 thirdAngle(90, 30) doit retourner 60
 thirdAngle(20, 80) doit retourner 80
+
+  b*b = a*a + c*c - 2*a*c*cos(angleB)
+b*b - a*a - c*c = - 2*a*c*cos(angleB)
+2*a*c*cos(angleB) = a*a + c*c - b*b
+cos(angleB) = (a*a + c*c - b*b) / (2*a*c)
+angleB = acos((a*a + c*c - b*b) / (2*a*c))
+
+
+si a = 90 b = 30 alors c = 60 
+comment trouver c 
+180 - 90 - 30 = 60 
+
 */
 
 function thirdAngle(a, b) {
-  // Your code here !
+      return 180 - a -b;   
 }
 
 module.exports = thirdAngle;
