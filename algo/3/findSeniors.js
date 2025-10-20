@@ -23,10 +23,18 @@ const persons = [
   { name: 'Penelope', experience: 7, job: 'web dev' },
 ];
 
+
+
 */
 
 function findSeniors(persons) {
-  // Your code here !
+  const newArr = []
+  const devSeniors = persons.filter(e => e.experience >= 5 && e.job === 'web dev')
+  const dataSeniors = persons.filter(e => e.experience >= 5 && e.job === 'data analyst');
+  newArr.push(devSeniors, dataSeniors)
+  return newArr;
 }
+
+
 
 module.exports = findSeniors;
