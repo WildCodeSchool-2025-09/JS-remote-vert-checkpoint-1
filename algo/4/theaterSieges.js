@@ -18,7 +18,17 @@ exemple du résultat final :
 */
 
 function theaterSieges() {
-  // Your code here !
+  let array = [];
+  for (let i = 1; i <= 26; i++) {
+    let newA = [];
+
+    for (let j = 1; j <= 100; j++) {
+      newA.push(`${i}-${j}`);
+    }
+
+    array.push(newA);
+  }
+  return array;
 }
 
 module.exports = theaterSieges;
