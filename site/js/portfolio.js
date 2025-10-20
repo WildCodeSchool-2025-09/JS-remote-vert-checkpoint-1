@@ -12,6 +12,7 @@ const button = document.querySelector("button");
 const firstName = document.querySelector("#firstname");
 const background = document.querySelectorAll(".pink-bg");
 const textPink = document.querySelectorAll(".pink-text");
+const link = document.querySelectorAll("a");
 
 button.addEventListener("click", () => {
     newColor = prompt("Enter a color :");
@@ -25,6 +26,10 @@ button.addEventListener("click", () => {
     })
 
     textPink.forEach((element) => {
+        element.style.color = newColor;
+    })
+
+    link.forEach((element) => {
         element.style.color = newColor;
     })
 });
