@@ -15,10 +15,21 @@ exemple du résultat final :
   ...
   ["26-1", "26-2", "26-3", ..., "26-100"]
 ]
+
+je veux que un tableau de 26 tableaux de 100 strings
 */
 
 function theaterSieges() {
-  // Your code here !
+  let theaterSiege = [];
+  let sieges = []
+  for( i = 1 ; i < 101 ; i++){
+    sieges.push(`${i}`)
+for (i = 1 ; i < 27 ; i++){
+  sieges.forEach((siege => `${i}-${siege}`))
+}
+    
+  return sieges
+}
 }
 
 module.exports = theaterSieges;

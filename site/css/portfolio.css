@@ -10,6 +10,13 @@
 
   --textAlign: center;
 }
+button {
+  border: solid 2px white;
+  width: 200px;
+  background-color: var(--lightWildColor);
+  color:white;
+  border-radius: 2px;
+}
 
 img {
   max-width: 100%;
@@ -96,6 +103,10 @@ p {
   color: var(--purple);
 }
 
+.disabled{
+  opacity: .4
+}
+
 .box {
   width: 25%;
   padding: calc(var(--gutter) * 2);
@@ -107,4 +118,47 @@ p {
 
 .purple-text {
   color: var(--purple);
+}
+
+@media screen and (min-width: 700px) {
+header nav {
+  display: flex;
+  justify-content: space-between;
+}
+  main section.first-banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+main article.skills{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+main article .column{
+  width:50%
+}
+
+main div.project-description{
+ text-align: center
+}
+
+main article.projects {
+  display: flex;
+  flex-wrap: wrap;
+justify-content: center
+}
+
+}
+
+@media screen and (max-width:700px){
+  main section figure img{
+    display: none;
+  }
+
+  main article.skills{
+    display:flex;
+    flex-direction: column-reverse
+  }
+  
 }
