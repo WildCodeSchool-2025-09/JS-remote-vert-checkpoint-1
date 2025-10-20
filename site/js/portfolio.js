@@ -6,21 +6,23 @@ avatar.addEventListener("click", function () {
      avatar.src = "image/avatar.svg";
 });
 
-// Step 2, 3, 4 part 2
+// Step 2, 3, 4, 5 part 2
 
-const button = document.querySelector("button");
+const buttonUser = document.querySelector(".user-modifications");
+const buttonModify = document.querySelector(".modify-tools");
 const firstName = document.querySelector("#firstname");
 const background = document.querySelectorAll(".pink-bg");
 const textPink = document.querySelectorAll(".pink-text");
 const link = document.querySelectorAll("a");
 
-button.addEventListener("click", () => {
+buttonUser.addEventListener("click", () => {
     newColor = prompt("Enter a color :");
     newName = prompt("Enter your name :");
     firstName.innerHTML = newName;
     firstName.style.color = "var(--light)";
-    button.style.backgroundColor = newColor;
-
+    buttonUser.style.backgroundColor = newColor;
+    buttonModify.style.backgroundColor = newColor;
+  
     background.forEach((element) => {
         element.style.backgroundColor = newColor;
     })
@@ -33,3 +35,18 @@ button.addEventListener("click", () => {
         element.style.color = newColor;
     })
 });
+
+// Step 6 part 2
+
+const listFrontDevTools = document.querySelector("#front-dev-tools");
+
+buttonModify.addEventListener("click", () => {
+    const newText = ["VSCode", "GitHub", "Terminal"];
+    listFrontDevTools.innerHTML = "";
+
+    newText.forEach((element) => {
+        const itemList = document.createElement("li");
+        itemList.textContent = element;
+        listFrontDevTools.appendChild(itemList);
+    })
+})

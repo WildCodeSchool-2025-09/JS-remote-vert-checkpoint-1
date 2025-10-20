@@ -64,14 +64,14 @@ nav {
   width: 60%;
   text-align: var(--textAlign);
   }
+}
 
-  & button {
-    background-color: var(--wildColor);
-    color: var(--light);
-    border: 1px solid var(--light);
-    border-radius: 5px;
-    padding: 10px;
-  }
+button {
+  background-color: var(--wildColor);
+  color: var(--light);
+  border: 1px solid var(--light);
+  border-radius: 5px;
+  padding: 10px;
 }
 
 .pink-bg {
