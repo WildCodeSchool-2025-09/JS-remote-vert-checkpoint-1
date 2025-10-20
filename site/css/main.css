@@ -10,7 +10,7 @@
   --radius: 5px;
   --borderTemplate: 1px solid;
 
-  --darkColor : #000000;
+  --darkColor: #000000;
   --textColor: #39424e;
   --wildColor: #f76c6c;
   --lightWildColor: #ffc0cb;
@@ -30,7 +30,14 @@ body {
 
 header nav {
   display: flex;
+  align-items: center;
   margin: var(--gutter) calc(var(--gutter) * 2);
+}
+
+@media screen and (min-width: 701px) {
+  header nav {
+    justify-content: space-between;
+  }
 }
 
 header nav img {
@@ -58,4 +65,16 @@ button:focus {
 
 #firstname {
   color: red;
-}  
+}
+section#main {
+margin: auto;
+}
+@media screen and (min-width: 701px) {
+  section#main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
