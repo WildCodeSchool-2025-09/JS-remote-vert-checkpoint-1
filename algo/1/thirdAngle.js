@@ -7,7 +7,16 @@ thirdAngle(20, 80) doit retourner 80
 */
 
 function thirdAngle(a, b) {
-  // Your code here !
+  let sumAngle = 180;
+  if (isNaN(a) || isNaN(b)) {
+    return NaN;
+  }
+  let x = sumAngle - a - b;
+  return x;
 }
 
 module.exports = thirdAngle;
+
+
+console.log(thirdAngle(90, 30));
+console.log(thirdAngle(20, 80));
