@@ -139,7 +139,7 @@ section#banner {
 
 article.skills {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   align-items: center;
 }
 
@@ -149,7 +149,7 @@ h2.skills--title {
 
 @media screen and (min-width: 701px) {
   article.skills {
-    flex-direction: row-reverse;
+    flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: flex-start;
