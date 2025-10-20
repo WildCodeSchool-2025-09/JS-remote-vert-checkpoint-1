@@ -87,7 +87,17 @@ nav {
   border-radius: var(--radius);
   text-align: var(--textAlign);
   box-shadow: var(--styledShadow);
-  width: 40%;
+  width: 50%;
+}
+
+@media screen and (max-width: 700px) {
+  .skills {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .column {
+    width: 80%;
+  }
 }
 
 .column:first-of-type {
