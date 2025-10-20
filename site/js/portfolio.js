@@ -10,6 +10,7 @@ avatar.addEventListener("click", function () {
 
 const buttonUser = document.querySelector(".user-modifications");
 const buttonModify = document.querySelector(".modify-tools");
+const buttonAdd = document.querySelector(".add-tools");
 const firstName = document.querySelector("#firstname");
 const background = document.querySelectorAll(".pink-bg");
 const textPink = document.querySelectorAll(".pink-text");
@@ -22,6 +23,7 @@ buttonUser.addEventListener("click", () => {
     firstName.style.color = "var(--light)";
     buttonUser.style.backgroundColor = newColor;
     buttonModify.style.backgroundColor = newColor;
+    buttonAdd.style.backgroundColor = newColor;
   
     background.forEach((element) => {
         element.style.backgroundColor = newColor;
@@ -49,4 +51,16 @@ buttonModify.addEventListener("click", () => {
         itemList.textContent = element;
         listFrontDevTools.appendChild(itemList);
     })
+});
+
+// Step 7 part 2 
+
+const toolsInput = document.querySelector("#new-dev-tools");
+const listBackDevTools = document.querySelector("#back-dev-tools");
+
+buttonAdd.addEventListener("click", () => {
+    const newLi = document.createElement("li");
+    newLi.textContent = toolsInput.value;
+    listBackDevTools.appendChild(newLi);
+    toolsInput.value = "";
 })
