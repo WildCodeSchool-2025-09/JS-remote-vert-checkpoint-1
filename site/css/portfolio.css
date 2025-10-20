@@ -13,7 +13,7 @@
 button {
   border: solid 2px white;
   width: 200px;
-  background-color: var(--lightWildColor);
+  background-color: transparent;
   color:white;
   border-radius: 2px;
 }
