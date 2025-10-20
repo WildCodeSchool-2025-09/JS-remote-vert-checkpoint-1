@@ -6,10 +6,13 @@ avatar.onclick = function () {
 }
 
 const button = document.querySelector('.button');
-const firstname = document.querySelector('#firstname'); 
+const firstName = document.querySelector('#firstname'); 
+const background = document.querySelector('.description');
 
 button.addEventListener("click", function(event) {
-    const newName = prompt("Enter your name :");   
-    firstname.innerHTML = newName;
-    firstname.style.color = "white";
+    const newBackground = prompt("Enter a color :");  
+    const newName = prompt("Enter your name :"); 
+    firstName.innerHTML = newName;
+    firstName.style.color = "white";
+    background.style.backgroundColor = newBackground;
 })
