@@ -34,7 +34,7 @@ modifyingTools.addEventListener('click', () => {
     }
 })
 sectionFront.appendChild(modifyingTools)
-console.log(allLiDevTools)
+
 
 
 let sectionBack = document.querySelector('.back');
@@ -51,6 +51,6 @@ buttonBack.addEventListener('click', () => {
     
 })
 inputBack.innerText =''
-sectionBack.appendChild(buttonBack)
 sectionBack.appendChild(inputBack)
+sectionBack.appendChild(buttonBack)
 

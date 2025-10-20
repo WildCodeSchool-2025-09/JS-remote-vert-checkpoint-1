@@ -21,15 +21,16 @@ je veux que un tableau de 26 tableaux de 100 strings
 
 function theaterSieges() {
   let theaterSiege = [];
-  let sieges = []
-  for( i = 1 ; i < 101 ; i++){
-    sieges.push(`${i}`)
-for (i = 1 ; i < 27 ; i++){
-  sieges.forEach((siege => `${i}-${siege}`))
-}
-    
-  return sieges
-}
+
+  for(i = 0; i < 26; i++) {
+    theaterSiege[i] = [];
+
+    for(j = 1; j < 101; j++) {
+      theaterSiege[i].push(`${i+1}-${j}`);
+    }
+  }
+
+  return theaterSiege;
 }
 
 module.exports = theaterSieges;
