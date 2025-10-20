@@ -31,3 +31,23 @@ frontBtn.addEventListener("click", () => {
   console.log(frontSkills);
   frontSkills.forEach((el, i) => (el.textContent = arrayOfSkills[i]));
 });
+
+const backBtn = document.querySelector("#back-btn");
+const input = document.querySelector("input");
+const toolList = document.querySelector("#tool-list");
+
+backBtn.addEventListener("click", addTool);
+
+input.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") {
+    addTool();
+  }
+});
+
+function addTool() {
+  const newLi = document.createElement("li");
+  newLi.textContent = input.value;
+  toolList.appendChild(newLi);
+  input.value = "";
+  input.focus();
+}
