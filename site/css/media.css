@@ -4,10 +4,9 @@
   }
 
   article.skills div {
-    display: flex;
-    justify-content: center;
     flex-direction: column-reverse;
   }
+
   .column {
     width: 100%;
   }
@@ -17,9 +16,11 @@
     flex-wrap: wrap;
     justify-content: center;
   }
+
   .box {
     max-width: 100%;
   }
+
   #presentation {
     width: 100%;
   }
