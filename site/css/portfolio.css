@@ -116,6 +116,7 @@ p {
     justify-content: space-between;
   }
 }
+
 section#banner {
   margin: auto;
 }
@@ -133,5 +134,24 @@ section#banner {
 @media screen and (max-width: 700px) {
   .desktop {
     display: none;
+  }
+}
+
+article.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2.skills--title {
+  display: none;
+}
+
+@media screen and (min-width: 701px) {
+  article.skills {
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
   }
 }
