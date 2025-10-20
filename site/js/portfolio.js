@@ -18,3 +18,16 @@ nameBtn.addEventListener("click", () => {
   firstName.textContent = name;
   firstName.style.color = "white";
 });
+
+const frontBtn = document.querySelector("#front-btn");
+const frontSkills = document.querySelectorAll("#front-dev-tools li");
+
+frontBtn.addEventListener("click", () => {
+  const customSkills = prompt(
+    "Enter 3 front-end skills (separated by commas):"
+  );
+  let arrayOfSkills = customSkills.split(",");
+
+  console.log(frontSkills);
+  frontSkills.forEach((el, i) => (el.textContent = arrayOfSkills[i]));
+});
