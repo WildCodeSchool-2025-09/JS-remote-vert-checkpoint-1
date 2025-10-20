@@ -35,3 +35,22 @@ modifyingTools.addEventListener('click', () => {
 })
 sectionFront.appendChild(modifyingTools)
 console.log(allLiDevTools)
+
+
+let sectionBack = document.querySelector('.back');
+let inputBack = document.createElement('input')
+let buttonBack = document.createElement('button')
+buttonBack.style.backgroundColor = '#750ff7'
+buttonBack.innerText ='Modify'
+buttonBack.addEventListener('click', () => {
+    let backendList = document.querySelector('#backend-list') 
+    let newLiElemment = document.createElement('li')
+    newLiElemment.innerText = inputBack.value
+    backendList.appendChild(newLiElemment)
+    inputBack.value =''
+    
+})
+inputBack.innerText =''
+sectionBack.appendChild(buttonBack)
+sectionBack.appendChild(inputBack)
+
