@@ -67,7 +67,6 @@ nav {
 
   & button {
     background-color: var(--wildColor);
-    opacity: 0.5;
     color: var(--light);
     border: 1px solid var(--light);
     border-radius: 5px;
