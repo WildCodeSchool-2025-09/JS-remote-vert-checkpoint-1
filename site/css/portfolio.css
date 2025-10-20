@@ -173,3 +173,11 @@ h2.skills--title {
     align-items: center;
   }
 }
+
+button {
+  background-color: pink;
+  color: white;
+  height: 2.5rem;
+  border-radius: 10px;
+  border: 1px solid white;
+}
