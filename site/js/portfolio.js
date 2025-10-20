@@ -11,6 +11,10 @@ modifyingName.addEventListener('click', ()=> {
     document.documentElement.style.setProperty("--lightWildColor",prompt('What color do you want'));
     firstName.innerText = prompt('What is your name ?')
     firstName.style.color = 'white'
+    
   
 })
 description.appendChild(modifyingName)
+
+let allA = document.querySelectorAll('a')
+allA.forEach((element)=>element.style.color = '#750ff7')
