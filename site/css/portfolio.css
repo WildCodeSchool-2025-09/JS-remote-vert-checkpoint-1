@@ -149,7 +149,7 @@ h2.skills--title {
 
 @media screen and (min-width: 701px) {
   article.skills {
-    flex-direction: row;
+    flex-direction: row-reverse;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: flex-start;
