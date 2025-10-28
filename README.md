@@ -33,7 +33,8 @@ Chaque checkpoint implique un ensemble d’étapes similaires :
 
 Résoud ces exercices :
 
-> [algo1.js](./algo/1/thirdAngle.js)
+> [algo1.js](./algo/1/thirdAngle.js) 
+>
 >
 > [algo2.js](./algo/2/isLeapYear.js)
 
