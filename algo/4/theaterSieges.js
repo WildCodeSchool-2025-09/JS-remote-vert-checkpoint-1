@@ -18,15 +18,17 @@ exemple du résultat final :
 */
 
 function theaterSieges() {
-  let array = []
-  for (let c = 1; c <= 26; c++) {
-    array[c] = []
-    for (let r = 1; r <= 100; r++) {
-      array[c].push(`${c + 1}-${r + 1}`)
+  const sieges = [];
+
+  for (let col = 1; col <= 26; col++) {
+    const rangee = [];
+    for (let seat = 1; seat <= 100; seat++) {
+      rangee.push(`${col}-${seat}`);
     }
+    sieges.push(rangee);
   }
-  return array
+
+  return sieges;
 }
-theaterSieges() // "1-1" [["1-1"]]
 
 module.exports = theaterSieges;
