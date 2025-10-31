@@ -1,6 +1,6 @@
 # Checkpoint 1 - JS
 
-## Introduction - Que sont les checkpoints ?
+## Introduction - Que sont les checkpoints ???
 
 Il s'agit de votre premier checkpoint : un **checkpoint** est un terme utilisé dans la Wild Code School pour décrire une **auto-évaluation dans un temps donné**. Elle dure généralement une demi-journée (jusqu'à une journée complète ou plus).
 
