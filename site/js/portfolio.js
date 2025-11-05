@@ -3,8 +3,6 @@ const src1 = 'image/avatar.svg';
 const src2 = 'image/avatar-bis.png';
 
 imgAvatar.addEventListener('click', () => {
-    console.log(imgAvatar.src);
-
     imgAvatar.src = imgAvatar.src == src2 ? src1 : src2;
 });
 
