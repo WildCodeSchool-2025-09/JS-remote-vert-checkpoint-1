@@ -1,6 +1,5 @@
 /*
-Écris une fonction qui peut déterminer si une année est une année bissextile. 
-Elle doit renvoyer `true` si c'est le cas, et `false` sinon.
+Écris une fonction qui peut déterminer si une année est une année bissextile. Elle doit renvoyer `true` si c'est le cas, et `false` sinon.
 Rappel : Une année bissextile vérifie **une** de ces règles :
 - Elle est divisible par 4, sans être divisible par 100
 - Elle est divisible par 400
@@ -9,20 +8,7 @@ Rappel : Pour vérifier si un nombre est divisible par un autre, tu peux utilise
 */
 
 function isLeapYear(year) {
-  if (year % 4 === 0 && year % 100 !== 0) {
-    return true;
-  }
-  if (year % 400 === 0) {
-    return true;
-  } else {
-    return false;
-  }
+  // Your code here !
 }
-
-console.log(isLeapYear(1900));
-console.log(isLeapYear(2000));
-console.log(isLeapYear(2004));
-console.log(isLeapYear(2019));
-console.log(isLeapYear(2020));
 
 module.exports = isLeapYear;
