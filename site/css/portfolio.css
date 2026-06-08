@@ -28,12 +28,17 @@ p {
   margin-bottom: var(--gutter);
 }
 
-.desktop {
+@media screen and (min-width: 701px){
+  nav{display: flex;
+    justify-content: space-between;}
+
+  .desktop {
   margin: 0;
   margin-top: calc(var(--gutter) * 5);
   margin-bottom: calc(var(--gutter) * -0.3125);
 }
 
+}
 .description {
   color: var(--light);
   display: flex;
