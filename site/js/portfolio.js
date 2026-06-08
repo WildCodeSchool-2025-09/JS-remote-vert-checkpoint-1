@@ -9,14 +9,18 @@ const bouton = document.querySelector("#bouton");
 
 const name = document.querySelector("#firstname");
 
+const color = document.querySelector(".pink-bg")
 
 bouton.addEventListener("click", () => {
+    const bgColor = prompt("choose color")
     const newName = prompt("enter your name");
 
-    if (newName) {
+    if (newName && bgColor) {
     name.textContent = newName;
-    name.style.color = "white"
-  }
+    name.style.color = "white";
+    color.style.backgroundColor = "#750ff7";
+  } 
+   
 });
     
 
