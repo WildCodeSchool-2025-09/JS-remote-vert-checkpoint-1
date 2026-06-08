@@ -106,8 +106,22 @@ div#columns {
   color: var(--lightWildColor);
 }
 
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  maw-width: 350px;
+}
 .projects a {
   color: var(--purple);
+}
+a.disabled {
+  opacity: 0.5;
 }
 
 .box {
