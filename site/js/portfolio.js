@@ -7,7 +7,8 @@ function changeName() {
 
     const newColor = prompt("enter a color", '#750ff7');
     if (newColor) {
-        document.querySelector(".pink-bg").style.backgroundColor = newColor
+        document.querySelectorAll(".pink-bg").forEach(el => el.style.backgroundColor = newColor)
+        document.querySelectorAll('.pink-text').forEach(el => el.style.color = newColor);
     }
 
 
