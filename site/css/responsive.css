@@ -9,12 +9,25 @@
         align-items: center;
     }
 
+    .skills {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: row-reverse;
+    }
+
 
 }
 
+/* plus petits que 700px */
 @media screen and (max-width: 700px) {
     .desktop {
         display: none;
+    }
+
+    .skills {
+        display: flex;
+        flex-direction: column-reverse;
     }
 
 }
