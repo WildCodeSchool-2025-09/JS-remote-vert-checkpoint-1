@@ -7,13 +7,15 @@ avatar.addEventListener("click", () => {avatar.src = "image/avatar-bis.png"});
 
 const bouton = document.querySelector("#bouton");
 
-let name = document.querySelector("#firstname");
+const name = document.querySelector("#firstname");
 
 
 bouton.addEventListener("click", () => {
-    let newName = prompt("enter your name");
+    const newName = prompt("enter your name");
 
+    if (newName) {
     name.textContent = newName;
+  }
 });
     
 
