@@ -1,6 +1,5 @@
-const image = document.getElementById();
-image.addEventListener("click", function () { })
-    
-
-}
+const image = document.getElementById("avatar");
+image.addEventListener("click", () => {
+    let changeImage = image.setAttribute("src", "image/avatar.svg")
+})
 
