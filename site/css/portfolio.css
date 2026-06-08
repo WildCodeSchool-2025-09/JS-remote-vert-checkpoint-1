@@ -114,6 +114,7 @@ main section:first-child {
   margin: calc(var(--gutter) * 1.25);
   border-radius: var(--radius);
   box-shadow: var(--styledShadow);
+  text-align: var(--textAlign);
 }
 
 .purple-text {
@@ -152,5 +153,11 @@ main section:first-child {
     h2 {
       display: none;
     }
+  }
+
+  .projects div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
