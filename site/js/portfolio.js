@@ -6,7 +6,9 @@ avatar.addEventListener("click", () => {
 
 const modifButton = document.getElementById("modif-button");
 const firstName = document.getElementById("firstname");
+const pinkBG = document.getElementById("pink");
 modifButton.addEventListener("click", () => {
+    let newBG = pinkBG.style.backgroundColor = prompt("Wich color ?");
     let newName = firstName.textContent = prompt("What\'s you name ?");
     firstName.style.color = "white";
 });
