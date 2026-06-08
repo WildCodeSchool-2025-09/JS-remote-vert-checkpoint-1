@@ -15,6 +15,7 @@ bouton.addEventListener("click", () => {
 
     if (newName) {
     name.textContent = newName;
+    name.style.color = "white"
   }
 });
     
