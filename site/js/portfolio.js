@@ -12,6 +12,8 @@ modifButton.addEventListener("click", () => {
     let newBG = pinkBG.style.backgroundColor = prompt("Wich color ?");
     let newName = firstName.textContent = prompt("What\'s you name ?");
     firstName.style.color = "white";
-    let newBgColors = colors.style.backgroundColor = newBG;
-    let newTxtColors = colors.style.color = newBG;
+    colors.forEach(() => {
+        let newColors = colors.style.backgroundColor = newBG
+        let newBGColors = colors.style.color = newBG
+    })
 });
