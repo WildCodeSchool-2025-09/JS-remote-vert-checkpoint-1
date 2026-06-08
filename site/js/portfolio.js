@@ -1,5 +1,5 @@
 
-// As a user I can change the avatar image when I click on it
+// Step 1
 
 const avatar = document.querySelector(".avatar");
 const pathSrc = "./image/avatar-bis.png"; 
@@ -13,7 +13,7 @@ avatar.addEventListener("click", () => {
     };    
 });
 
-// As a user I can replace the text Matt on the paragraphe with your name and it's color with the color white
+// Step 2 - 4
 
 const firstName = document.querySelector("#firstname");
 const modifyButton = document.querySelector("#modify-text-and-color");
@@ -26,4 +26,38 @@ modifyButton.addEventListener("click", () => {
     if (givenColor === "#750ff7") {
         document.querySelector(".description").classList.toggle("violet-bg");
     }
+});
+
+// Step 5
+
+const links = document.querySelectorAll("a");
+const modifyButtonLinks = document.querySelector("#modify-color-of-links");
+
+modifyButtonLinks.addEventListener("click", () => {
+    links.forEach(link => {
+        link.style.color = "#750ff7";
+    })
+});
+
+// Step 6
+
+const emptyFrontToolsContainer = document.querySelector("#front-dev-tools");
+const modifyButtonTools = document.querySelector("#modify-text-of-tools");
+const toolsList = ["VSCode", "Github", "Terminal"];
+
+modifyButtonTools.addEventListener("click", () => {
+    emptyFrontToolsContainer.innerHTML = "";
+    toolsList.forEach(tool => {
+        emptyFrontToolsContainer.innerHTML += "<li>" + tool + "</li>"
+    })
+});
+
+// Step 7
+
+const emptyBackToolsContainer = document.querySelector("#back-dev-tools");
+const addButtonTools = document.querySelector("#add-text-in-tools");
+
+addButtonTools.addEventListener("click", () => {
+    const givenTool = prompt("Add a tool");
+    emptyBackToolsContainer.innerHTML += "<li>" + givenTool + "</li>"
 });

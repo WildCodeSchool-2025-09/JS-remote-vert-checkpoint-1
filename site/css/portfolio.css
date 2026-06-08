@@ -50,13 +50,15 @@ p {
     align-items: center;
     padding: calc(var(--gutter) * 3.75);
 
-    & #modify-text-and-color {
+    & button {
         height: 30px;
         background: transparent;
         border: 2px solid white;
         border-radius: 5px;
         color: white;
         text-transform: uppercase;
+        margin: calc(var(--gutter) * 0.5);
+        cursor: pointer;
     }
 }
 
@@ -103,6 +105,17 @@ p {
     box-shadow: var(--styledShadow);
     @media screen and (min-width: 700px) {
         flex-basis: 50%;
+    }
+
+    & button {
+        height: 30px;
+        background-color: var(--purple);
+        border: none;
+        border-radius: 5px;
+        color: white;
+        text-transform: uppercase;
+        margin: calc(var(--gutter) * 0.5);
+        cursor: pointer;
     }
 }
 
