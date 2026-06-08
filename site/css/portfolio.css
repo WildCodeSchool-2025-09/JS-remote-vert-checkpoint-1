@@ -49,6 +49,15 @@ p {
     flex-direction: column;
     align-items: center;
     padding: calc(var(--gutter) * 3.75);
+
+    & #modify-text-and-color {
+        height: 30px;
+        background: transparent;
+        border: 2px solid white;
+        border-radius: 5px;
+        color: white;
+        text-transform: uppercase;
+    }
 }
 
 .description p {
@@ -60,11 +69,15 @@ p {
     background-color: var(--lightWildColor);
 }
 
+.violet-bg {
+    background-color: var(--purple);
+}
+
 .skills {
     display: flex;
     flex-direction: row-reverse;
     flex-wrap: wrap;
-    margin-top: calc(var(--gutter) * -2);
+    margin-top: calc(var(--gutter) * 2);
     border-radius: var(--radius);
     padding: 0 10%;
     @media screen and (max-width: 699px) {
