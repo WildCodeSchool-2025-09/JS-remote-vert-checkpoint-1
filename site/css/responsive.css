@@ -1,0 +1,13 @@
+@media screen and (min-width: 700px) {
+    header nav {
+        justify-content: space-between;
+    }
+
+    .banner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+}
