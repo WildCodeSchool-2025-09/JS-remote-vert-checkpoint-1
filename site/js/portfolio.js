@@ -14,7 +14,14 @@ button.addEventListener('click', function() {
     firstname.style.color = 'white';
   }
 
-  const color = prompt ('Quelle couleur de background ? (ex: #750ff7)'); {
-    document.querySelector('.pink-bg').style.backgroundColor = color;
+const color = prompt('Quelle couleur de background ? (ex: #750ff7)');
+if (color) {
+  document.querySelector('.pink-bg').style.backgroundColor = color;
+  document.querySelector('footer').style.backgroundColor = color;
+
+  const pinkTexts = document.querySelectorAll('.pink-text');
+  for (let i = 0; i < pinkTexts.length; i++) {
+    pinkTexts[i].style.color = color;
   }
+}
 });
