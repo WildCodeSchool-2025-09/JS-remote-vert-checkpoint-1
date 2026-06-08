@@ -95,3 +95,9 @@ button:focus {
   }
 }
 
+@media (min-width: 700px) {
+  .skills--title {
+    display: none;
+    
+  }
+}
