@@ -23,3 +23,8 @@ modifButton.addEventListener("click", () => {
     }
 
 });
+
+const links = document.getElementsByTagName("a");
+for (let i = 0; i < links.length; i++) {
+    links[i].style.color = "#750ff7";
+}
