@@ -7,24 +7,19 @@ avatar.addEventListener("click", () => {
 const modifButton = document.getElementById("modif-button");
 const firstName = document.getElementById("firstname");
 const pinkBG = document.getElementById("pink");
-const colors = document.getElementsByClassName("pinky");
+const backgrounds = document.querySelectorAll(".pink-bg");
+const texts = document.querySelectorAll(".pink-text");
 modifButton.addEventListener("click", () => {
     let newBG = pinkBG.style.backgroundColor = prompt("Wich color ?");
     let newName = firstName.textContent = prompt("What\'s you name ?");
     firstName.style.color = "white";
-    // colors.forEach(() => {
-    //     if (backgroundColor !== undefined || backgroundColor !== null) {
-    //         let newColors = colors.style.backgroundColor = newBG;
-    //     }
-    //     else if (color === "var(--lightWildColor)")
-    //         let newBGColors = colors.style.color = newBG;
-    // });
+    // with ai
+    for (let i = 0; i < backgrounds.length; i++) {
+        backgrounds[i].style.backgroundColor = newBG;
+    }
 
-    // let newColors = colors.style.backgroundColor = newBG;
-    // let newBGColors = colors.style.color = newBG;
-    for (let i = 0; i < colors.length; i++) {
-        let newColors = colors.style.backgroundColor = newBG;
-        let newBGColors = colors.style.color = newBG;
+    for (let i = 0; i < texts.length; i++) {
+        texts[i].style.color = newBG;
     }
 
 });
