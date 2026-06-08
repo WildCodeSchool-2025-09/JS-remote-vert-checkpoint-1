@@ -1,0 +1,63 @@
+/* Moins de 700px */
+@media (max-width: 699px) {
+
+    .Banner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .desktop {
+        display: none;
+    }
+    .skills {
+        display: flex;
+        flex-direction: column-reverse;
+  }
+      .skills--title {
+        display: none;
+    }
+
+}
+
+/* Plus de 700px */
+@media (min-width: 700px) {
+  
+    header nav {
+        display: flex;
+        justify-content: space-between;
+}
+    .Banner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .skills {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+    }
+
+    .column {
+        flex: 1;
+    }
+
+    .skills--title {
+        display: none;
+    }
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+  .projects h2,
+  .projects p {
+    width: 100%;
+    text-align: center;
+  }
+

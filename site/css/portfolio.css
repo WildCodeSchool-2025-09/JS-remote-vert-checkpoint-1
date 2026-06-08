@@ -108,3 +108,7 @@ p {
 .purple-text {
   color: var(--purple);
 }
+
+.disabled {
+  opacity: 0.3;
+}
