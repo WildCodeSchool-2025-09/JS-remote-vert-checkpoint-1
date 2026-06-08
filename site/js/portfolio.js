@@ -28,3 +28,11 @@ const links = document.getElementsByTagName("a");
 for (let i = 0; i < links.length; i++) {
     links[i].style.color = "#750ff7";
 }
+const modifButton2 = document.getElementById("modif-button2");
+modifButton2.addEventListener("click", () => {
+    const UlLi = document.querySelectorAll("#front-dev-tools>li");
+    UlLi[0].innerHTML = "VSCode";
+    UlLi[1].innerHTML = "Github";
+    UlLi[2].innerHTML = "Terminal";
+
+});
