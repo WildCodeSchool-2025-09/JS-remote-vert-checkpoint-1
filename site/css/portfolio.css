@@ -11,8 +11,37 @@
   --textAlign: center;
 }
 
+main section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+@media (min-width: 701px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+  }
+}
+
 img {
   max-width: 100%;
+}
+
+@media (max-width: 699px) {
+  .desktop {
+    display: none;
+  }
 }
 
 h1 {
@@ -25,6 +54,7 @@ p {
 
 .menu {
   display: flex;
+  justify-content: flex-end;
   margin-bottom: var(--gutter);
 }
 
@@ -55,6 +85,25 @@ p {
   margin-top: calc(var(--gutter) * -2);
   border-radius: var(--radius);
   padding: 0 10%;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  max-width: 1000px;
+  margin: 50px auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
+}
+
+.skills {
+  display: flex;
+}
+
+@media (max-width: 700px) {
+  .skills {
+    flex-direction: column-reverse;
+  }
 }
 
 .skills--title {
