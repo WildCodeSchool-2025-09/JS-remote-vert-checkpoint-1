@@ -19,8 +19,12 @@ modifButton.addEventListener("click", () => {
     //     else if (color === "var(--lightWildColor)")
     //         let newBGColors = colors.style.color = newBG;
     // });
-    colors.forEach(() => {
+
+    // let newColors = colors.style.backgroundColor = newBG;
+    // let newBGColors = colors.style.color = newBG;
+    for (let i = 0; i < colors.length; i++) {
         let newColors = colors.style.backgroundColor = newBG;
         let newBGColors = colors.style.color = newBG;
-    });
+    }
+
 });
