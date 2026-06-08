@@ -124,6 +124,11 @@ main section:first-child {
   .desktop {
     display: none;
   }
+
+  main article.skills {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 
 @media screen and (min-width:700px) {
