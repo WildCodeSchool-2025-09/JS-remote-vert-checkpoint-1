@@ -29,6 +29,8 @@ p {
 }
 
 .desktop {
+  display: flex;
+  justify-content: center;
   margin: 0;
   margin-top: calc(var(--gutter) * 5);
   margin-bottom: calc(var(--gutter) * -0.3125);
@@ -111,4 +113,12 @@ p {
 
 .disabled {
   opacity: 0.3;
+}
+
+#change-name {
+  background-color: rgb(228, 160, 245);
+  color: var(--cardColor);
+  border-radius: var(--radius);
+  border-color: #e6ecf8;
+  padding: 10px 15px;
 }
