@@ -107,6 +107,10 @@ main section:first-child {
   color: var(--purple);
 }
 
+.projects {
+  text-align: var(--textAlign);
+}
+
 .box {
   width: 25%;
   padding: calc(var(--gutter) * 2);
@@ -155,7 +159,7 @@ main section:first-child {
     }
   }
 
-  .projects div {
+  .projects div.projects-boxes {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
