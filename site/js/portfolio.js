@@ -9,8 +9,8 @@ function changeName() {
     if (newColor) {
         document.querySelectorAll(".pink-bg").forEach(el => el.style.backgroundColor = newColor)
         document.querySelectorAll('.pink-text').forEach(el => el.style.color = newColor);
+        document.querySelectorAll('a').forEach(el => el.style.color = newColor);
     }
-
 
     const newName = prompt("Enter you name:");
     if (newName) {
@@ -18,6 +18,5 @@ function changeName() {
         span.textContent = newName;
         span.style.color = 'white';
     }
-
-
 }
+
