@@ -13,7 +13,10 @@ modifButton.addEventListener("click", () => {
     let newName = firstName.textContent = prompt("What\'s you name ?");
     firstName.style.color = "white";
     colors.forEach(() => {
-        let newColors = colors.style.backgroundColor = newBG
-        let newBGColors = colors.style.color = newBG
-    })
+        if (backgroundColor !== undefined || backgroundColor !== null) {
+            let newColors = colors.style.backgroundColor = newBG;
+        }
+        else if (color === "var(--lightWildColor)")
+            let newBGColors = colors.style.color = newBG;
+    });
 });
