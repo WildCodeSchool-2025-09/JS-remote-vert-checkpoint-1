@@ -28,7 +28,7 @@ p {
   margin-bottom: var(--gutter);
 }
 
-@media screen and (min-width: 701px) {
+.banner @media screen and (min-width: 701px) {
   nav {
     display: flex;
     justify-content: space-between;
@@ -77,14 +77,19 @@ p {
     flex-direction: row-reverse;
     justify-content: center;
   }
-  .skills--title{display:none;}
+
+  .skills--title {
+    display: none;
+  }
 }
-@media screen and (max-width:700px){
-   .skills{
+
+@media screen and (max-width:700px) {
+  .skills {
     display: flex;
     flex-direction: column-reverse;
+  }
 }
-}
+
 .skills {
   margin-top: calc(var(--gutter) * -2);
   border-radius: var(--radius);
@@ -128,6 +133,10 @@ p {
 
 .projects a {
   color: var(--purple);
+}
+
+.disabled {
+  opacity: 0.3
 }
 
 .box {
