@@ -15,15 +15,6 @@ img {
   max-width: 100%;
 }
 
-#changeBackground{
-  border-style: solid;
-  border-color: white;
-  background-color: hsl(303, 97%, 66%);
-  color: white;
-  border-radius: 10%;
-  padding: 5px;
-}
-
 h1 {
   font-size: calc(var(--gutter) * 1.5);
 }
@@ -116,42 +107,4 @@ p {
 
 .purple-text {
   color: var(--purple);
-}
-
-.projects .disabled{
-      color:hsla(266, 94%, 51%, 0.493);;
-}
-
-@media screen and (min-width: 700px){
-  header nav{
-  display: flex;
-  justify-content: space-between;
-  }
-
-  .title-step2{
-    text-align: center;
-  }
-
-  .skills{
-    display: flex;
-    flex-direction: row-reverse;
-
-    & .column{
-      flex: 1;
-    }
-  };
-
-  .projects{
-    display: flex;
-    
-  }
-}
-@media screen and (max-width: 700px){
-  .desktop img{
-      display: none;
-  }
-  .skills{
-    display: flex;
-    flex-direction: column-reverse;
-  }
 }
